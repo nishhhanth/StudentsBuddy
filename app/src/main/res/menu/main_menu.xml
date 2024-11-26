@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home"
+            />
+        <item android:id="@+id/attendance"
+            android:icon="@drawable/attendance_icon"
+            android:title="Find Attendance"
+            />
+        <item android:id="@+id/gpa"
+            android:icon="@drawable/gpa_calculator_icon"
+            android:title="Find Target"
+            />
+    </group>
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/about"
+                    android:icon="@drawable/user_profile_icon"
+                    android:title="About"
+                    />
+                <item android:id="@+id/login"
+                    android:icon="@drawable/input_icon"
+                    android:title="Login/Sign-Up"
+                    />
+            </group>
+
+        </menu>
+    </item>
+</menu>
