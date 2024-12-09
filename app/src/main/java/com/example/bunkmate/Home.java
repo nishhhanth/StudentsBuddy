@@ -75,6 +75,14 @@ public class Home extends AppCompatActivity {
                         drawerLayout.close();
                         break;
                     }
+                    case (R.id.course):{
+                        FragmentManager fragmentManager=getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+                        fragmentTransaction.replace(R.id.frameLayout,new Course());
+                        fragmentTransaction.commit();
+                        drawerLayout.close();
+                        break;
+                    }
                     case (R.id.login):{
                         Toast.makeText(Home.this, "login/sign-up", Toast.LENGTH_SHORT).show();
                         drawerLayout.close();
