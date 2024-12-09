@@ -11,6 +11,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
+import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -83,5 +84,10 @@ public class Home extends AppCompatActivity {
                 return false;
             }
         });
+    }
+    public void openNavigationDrawer(){
+        if(drawerLayout!=null){
+            drawerLayout.open();
+        }
     }
 }
