@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "886439304746",
+    "project_id": "bunkmatee",
+    "storage_bucket": "bunkmatee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886439304746:android:9b4c618dd768bc7bf4ad53",
+        "android_client_info": {
+          "package_name": "com.example.bunkmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZdpoYhS_OJ2eV3zxrEWEtdc1uQVJ-kWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
