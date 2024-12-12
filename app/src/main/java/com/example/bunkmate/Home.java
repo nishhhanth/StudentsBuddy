@@ -100,9 +100,14 @@ public class Home extends AppCompatActivity {
                         break;
                     }
                     case (R.id.modulo):{
+                        FragmentManager fragmentManager=getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+                        fragmentTransaction.replace(R.id.frameLayout,new ModuloFragment());
+                        fragmentTransaction.commit();
                         drawerLayout.close();
                         break;
                     }
+
                 }
                 return false;
             }
