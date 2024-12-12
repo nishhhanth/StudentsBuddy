@@ -28,9 +28,9 @@ public class Course extends Fragment {
         View view = inflater.inflate(R.layout.course, container, false);
         RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
 
-        // List of images (replace with your own drawable resources)
+
         List<Integer> imageList = Arrays.asList(
-                R.drawable.fcs, // Replace with your drawable
+                R.drawable.fcs,
                 R.drawable.udemy,
                 R.drawable.onlinecourse,
                 R.drawable.coursesity,
@@ -39,14 +39,12 @@ public class Course extends Fragment {
                 R.drawable.courseera
         );
 
-        // Set up RecyclerView
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         ImageAdapter adapter = new ImageAdapter(imageList, this::onImageClick);
         recyclerView.setAdapter(adapter);
         return view;
     }
     private void onImageClick(int position) {
-        // Show toast message
         String url;
         if(position==0){
             url="https://freecoursesite.com/";

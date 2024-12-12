@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:openDrawer="start"
-    tools:context=".Home">
+    tools:openDrawer="start">
     <include
         layout="@layout/activity_main_content"/>
 

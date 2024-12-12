@@ -71,7 +71,10 @@ public class Home extends AppCompatActivity {
                         break;
                     }
                     case (R.id.about):{
-                        Toast.makeText(Home.this, "about", Toast.LENGTH_SHORT).show();
+                        FragmentManager fragmentManager=getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+                        fragmentTransaction.replace(R.id.frameLayout,new About());
+                        fragmentTransaction.commit();
                         drawerLayout.close();
                         break;
                     }
