@@ -76,7 +76,7 @@ public class GameView extends View {
         canvas.drawText("Score: " + score, 50f, 50f, paint);
 
         // Draw the highest score
-        canvas.drawText("Highest Score: " + highestScore, screenWidth - 350f, 50f, paint);
+        canvas.drawText("Highest Score: " + highestScore, screenWidth - 450f, 50f, paint);
 
         // Update ball position
         ballX += ballSpeedX;
