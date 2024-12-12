@@ -91,6 +91,14 @@ public class Home extends AppCompatActivity {
                         drawerLayout.close();
                         break;
                     }
+                    case (R.id.game):{
+                        FragmentManager fragmentManager=getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+                        fragmentTransaction.replace(R.id.frameLayout,new Game());
+                        fragmentTransaction.commit();
+                        drawerLayout.close();
+                        break;
+                    }
                 }
                 return false;
             }

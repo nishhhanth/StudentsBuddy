@@ -17,6 +17,9 @@
             android:icon="@drawable/book_icon"
             android:title="Free Courses"
             />
+        <item android:id="@+id/game"
+            android:title="Game"
+            />
     </group>
     <item android:title="Profile">
         <menu>
