@@ -1,5 +1,7 @@
 package com.example.bunkmate;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,6 +47,48 @@ public class Course extends Fragment {
     }
     private void onImageClick(int position) {
         // Show toast message
-        Toast.makeText(getContext(), "Image " + (position + 1) + " clicked!", Toast.LENGTH_SHORT).show();
+        String url;
+        if(position==0){
+            url="https://freecoursesite.com/";
+            Intent in=new Intent(Intent.ACTION_VIEW);
+            in.setData(Uri.parse(url));
+            startActivity(in);
+        }
+        else if(position==1){
+            url="https://udemyfreecourses.org/";
+            Intent in=new Intent(Intent.ACTION_VIEW);
+            in.setData(Uri.parse(url));
+            startActivity(in);
+        }
+        else if(position==2){
+            url="https://onlinecoursedownload.com/";
+            Intent in=new Intent(Intent.ACTION_VIEW);
+            in.setData(Uri.parse(url));
+            startActivity(in);
+        }
+        else if(position==3){
+            url="https://coursesity.com/";
+            Intent in=new Intent(Intent.ACTION_VIEW);
+            in.setData(Uri.parse(url));
+            startActivity(in);
+        }
+        else if(position==4){
+            url="https://www.freecourseweb.org/";
+            Intent in=new Intent(Intent.ACTION_VIEW);
+            in.setData(Uri.parse(url));
+            startActivity(in);
+        }
+        else if(position==5){
+            url="https://www.udemy.com/";
+            Intent in=new Intent(Intent.ACTION_VIEW);
+            in.setData(Uri.parse(url));
+            startActivity(in);
+        }
+        else if(position==6){
+            url="https://www.coursera.org/";
+            Intent in=new Intent(Intent.ACTION_VIEW);
+            in.setData(Uri.parse(url));
+            startActivity(in);
+        }
     }
 }
