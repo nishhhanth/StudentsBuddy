@@ -18,9 +18,11 @@
             android:title="Free Courses"
             />
         <item android:id="@+id/game"
+            android:icon="@drawable/gamepad_icon"
             android:title="Game"
             />
         <item android:id="@+id/modulo"
+            android:icon="@drawable/percentage_icon"
             android:title="Calculate Modulo"
             />
     </group>
@@ -36,7 +38,6 @@
                     android:title="Login/Sign-Up"
                     />
             </group>
-
         </menu>
     </item>
 </menu>
