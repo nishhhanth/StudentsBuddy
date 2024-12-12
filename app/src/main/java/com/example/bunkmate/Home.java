@@ -99,6 +99,10 @@ public class Home extends AppCompatActivity {
                         drawerLayout.close();
                         break;
                     }
+                    case (R.id.modulo):{
+                        drawerLayout.close();
+                        break;
+                    }
                 }
                 return false;
             }
