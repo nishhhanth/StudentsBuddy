@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     android:padding="16dp">
 
     <EditText
@@ -21,12 +22,16 @@
 
     <Button
         android:id="@+id/buttonModulo"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/red"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculate Modulus" />
 
     <Button
         android:id="@+id/buttonClear"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/red"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Clear" />
@@ -35,6 +40,7 @@
         android:id="@+id/resultText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="Result: "
         android:paddingTop="16dp"
         android:textSize="18sp" />

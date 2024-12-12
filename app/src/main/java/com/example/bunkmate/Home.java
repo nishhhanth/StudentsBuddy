@@ -107,7 +107,6 @@ public class Home extends AppCompatActivity {
                         drawerLayout.close();
                         break;
                     }
-
                 }
                 return false;
             }
